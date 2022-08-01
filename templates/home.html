@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News</title>
+</head>
+<body>
+
+    <form method="POSt" action="{{ url_for('predict')}}">
+
+        <center>  <textarea name="message" rows="4" cols="50" lang="en"></textarea>
+<br> <br>
+   <input type="submit" style="color:white; background-color:dodgerblue; border-radius: 4px;padding: 10px 24px;" ></center>
+
+    </form>
+
+    <br>
+
+    <div>
+        {{prediction_text}}
+    </div>
+    
+</body>
+</html>
